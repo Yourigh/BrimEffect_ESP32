@@ -1,0 +1,8 @@
+Board Size: 76x33mm
+stackup thickness: 1.6mm
+2 layers
+double side TH assembly
+HAL surface plating
+Gerber format Integer: 3, Decimal: 4, metric
+
+THIS DESIGN HAS PLATED SLOTS - layer slotdrill.rou
