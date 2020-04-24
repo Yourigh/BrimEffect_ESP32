@@ -10,13 +10,13 @@ FILE_DESCRIPTION(
 
 FILE_NAME(
 /* name */ 
-'D:/PROJECTS/01_GIT_REPOS/BrimEffect_LED_lights/Mechanical/Mic Module 
-INMP441/INMP441_module_rigid v1.step',
-/* time_stamp */ '2020-04-03T20:08:27+02:00',
+'D:/PROJECTS/01_GIT_REPOS/BrimEffect_ESP32/Mechanical/Sub-models/Mic M
+odule INMP441/INMP441_module v4.step',
+/* time_stamp */ '2020-04-16T13:00:25+02:00',
 /* author */ (''),
 /* organization */ (''),
-/* preprocessor_version */ 'ST-DEVELOPER v18',
-/* originating_system */ 'Autodesk Translation Framework v8.12.0.6',
+/* preprocessor_version */ 'ST-DEVELOPER v18.1',
+/* originating_system */ 'Autodesk Translation Framework v9.2.0.1227',
 /* authorisation */ '');
 
 FILE_SCHEMA (('AUTOMOTIVE_DESIGN { 1 0 10303 214 3 1 1 }'));
@@ -1584,8 +1584,7 @@ SOLID_ANGLE_UNIT()
 #1487=SHAPE_REPRESENTATION('',(#844),#1467);
 #1488=SHAPE_REPRESENTATION('',(#888),#1468);
 #1489=PRODUCT_DEFINITION_CONTEXT('part definition',#1503,'design');
-#1490=PRODUCT_DEFINITION('INMP441_module_rigid',
-'INMP441_module_rigid v1',#1494,#1489);
+#1490=PRODUCT_DEFINITION('INMP441_module','INMP441_module v4',#1494,#1489);
 #1491=PRODUCT_DEFINITION('mic-INMP441','mic-INMP441 v1',#1495,#1489);
 #1492=PRODUCT_DEFINITION('Product','Product',#1496,#1489);
 #1493=PRODUCT_DEFINITION('pins','pins',#1497,#1489);
@@ -1593,8 +1592,8 @@ SOLID_ANGLE_UNIT()
 #1495=PRODUCT_DEFINITION_FORMATION('',$,#1506);
 #1496=PRODUCT_DEFINITION_FORMATION('',$,#1507);
 #1497=PRODUCT_DEFINITION_FORMATION('',$,#1508);
-#1498=PRODUCT_RELATED_PRODUCT_CATEGORY('INMP441_module_rigid v1',
-'INMP441_module_rigid v1',(#1505));
+#1498=PRODUCT_RELATED_PRODUCT_CATEGORY('INMP441_module v4',
+'INMP441_module v4',(#1505));
 #1499=PRODUCT_RELATED_PRODUCT_CATEGORY('mic-INMP441 v1',
 'mic-INMP441 v1',(#1506));
 #1500=PRODUCT_RELATED_PRODUCT_CATEGORY('Product','Product',(#1507));
@@ -1604,7 +1603,7 @@ SOLID_ANGLE_UNIT()
 #1503=APPLICATION_CONTEXT(
 'Core Data for Automotive Mechanical Design Process');
 #1504=PRODUCT_CONTEXT('part definition',#1503,'mechanical');
-#1505=PRODUCT('INMP441_module_rigid','INMP441_module_rigid v1',$,(#1504));
+#1505=PRODUCT('INMP441_module','INMP441_module v4',$,(#1504));
 #1506=PRODUCT('mic-INMP441','mic-INMP441 v1',$,(#1504));
 #1507=PRODUCT('Product','Product',$,(#1504));
 #1508=PRODUCT('pins','pins',$,(#1504));
