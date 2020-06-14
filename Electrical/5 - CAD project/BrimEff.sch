@@ -14993,6 +14993,7 @@ Vds&lt;12V</text>
 <text x="7.62" y="147.32" size="1.778" layer="97">funnel connector
 and
 screw terminal</text>
+<text x="167.64" y="139.7" size="1.778" layer="97">47k||1M2 = 45.289k</text>
 </plain>
 <instances>
 <instance part="FRAME2" gate="G$1" x="2.54" y="2.54" smashed="yes">

@@ -1,0 +1,54 @@
+esphome:
+  name: ......
+  platform: ESP32
+  board: nodemcu-32s
+  includes:
+    - music_leds_esphome.h
+    - includes/FFT.h
+    - includes/ExpFilter.h
+    - includes/VisualEffect.h
+    - includes/gaussian_filter1d.h
+
+.......
+
+esp32_touch:
+#  setup_mode: True
+binary_sensor:
+  - platform: esp32_touch
+    name: "Touch Pad on ESP32"
+    pin: GPIO32
+    threshold: 1000
+    on_press:
+      then:
+        - light.toggle: LedsStrip
+
+light:
+  - platform: fastled_clockless
+#  - platform: fastled_spi
+    id: LedsStrip
+    chipset: NEOPIXEL
+    #chipset: APA102
+    pin: GPIO21
+    #data_pin: GPIO21
+    #clock_pin: GPIO17
+    # If you change the num_leds, you should change the N_PIXELS defined in music_leds_esphome.h corresponding
+    num_leds: 60
+    #rgb_order: BGR
+    name: "MUSIC LEDS"
+    effects:
+      - addressable_rainbow:
+      - addressable_lambda:
+          name: Scroll with Music
+          update_interval: 0s
+          lambda: |-
+            music_leds.ShowFrame(MODE_SCROLL, &it);
+      - addressable_lambda:
+          name: Energy with Music
+          update_interval: 0s
+          lambda: |-
+            music_leds.ShowFrame(MODE_ENERGY, &it);
+      - addressable_lambda:
+          name: Spectrum with Music
+          update_interval: 0s
+          lambda: |-
+            music_leds.ShowFrame(MODE_SPECTRUM, &it);
