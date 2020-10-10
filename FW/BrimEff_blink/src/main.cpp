@@ -1,10 +1,5 @@
 #include <Arduino.h>
 #include <HardwareSerial.h>
-#include <driver/i2s.h>
- 
-#define I2S_WS 15
-#define I2S_SD 13
-#define I2S_SCK 2
 
 void setup()
 {
@@ -20,13 +15,6 @@ void setup()
   while (!Serial);             // Leonardo: wait for serial monitor
   Serial.println("\nalive");
 
-  Serial.println("Setup I2S ...");
-
-  delay(1000);
-  i2s_install();
-  i2s_setpin();
-  i2s_start(I2S_PORT);
-  delay(500);
 
 }
  
